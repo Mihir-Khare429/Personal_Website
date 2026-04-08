@@ -32,8 +32,8 @@ jobs:
           publish_dir: ./dist
           destination_dir: .
           publish_branch: gh-pages
-          publish_commit_message: "Deploy Astro site: ${{ github.sha }}"
+          commit_message: "Deploy Astro site: ${{ github.sha }}"
           allow_empty_commit: true
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
