@@ -6,5 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
+    site: 'https://mihir-khare429.github.io/Portfolio/',
   },
 });
