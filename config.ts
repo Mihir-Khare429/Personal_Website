@@ -31,29 +31,6 @@ export const siteConfig = {
     "PostgreSQL",
     "MongoDB",
   ],
-  projects: [
-    {
-      name: "Intelligent Multimedia Processing (IMP) for Enterprises",
-      description:
-        "Designed a comprehensive ML system automating extraction and indexing of enterprise multimedia data. Integrated a multimodal pipeline using Whisper for transcription, Sentence Transformers for semantic search, and Flan-T5-Large for RAG. Optimized deployment via Ray and quantization to achieve <200ms embedding latency.",
-      link: "https://github.com/Mihir-Khare429",
-      skills: ["Python", "Machine Learning", "Ray", "Whisper", "BERT", "Cloud"],
-    },
-    {
-      name: "Trailer 2 You (T2Y)",
-      description:
-        "Architected the backend for a trailer-booking application (Uber-style) using Node.js, Express, and MongoDB. Engineered the full booking workflow from React UI to backend, integrating Socket.io for live map updates and Google Maps API to lower booking abandonment by 8%.",
-      link: "#",
-      skills: ["Node.js", "Express", "MongoDB", "React", "Socket.io"],
-    },
-    {
-      name: "Entertainment By Xpressions (EBX)",
-      description:
-        "Developed an automated music selection application based on real-time facial expression analysis. Built the entire UI and participated in the development of algorithms to map moods to playlists, streamlining user engagement through interactive ML features.",
-      link: "https://github.com/Mihir-Khare429/EBX-CapstoneProject-Frontend",
-      skills: ["Machine Learning", "Computer Vision", "React", "Emotion Recognition"],
-    },
-  ],
   experience: [
     {
       company: "McKinsey Investment Office (MIO Partners)",
@@ -94,6 +71,29 @@ export const siteConfig = {
         "Configured AWS Elastic Load Balancers and Auto Scaling Groups to sustain requests exceeding 10k per minute.",
         "Engineered a complete booking process from React UI to Node.js backend, integrating Socket.io and Google Maps API.",
       ],
+    },
+  ],
+  projects: [
+    {
+      name: "Intelligent Multimedia Processing (IMP) for Enterprises",
+      description:
+        "Designed a comprehensive ML system automating extraction and indexing of enterprise multimedia data. Integrated a multimodal pipeline using Whisper for transcription, Sentence Transformers for semantic search, and Flan-T5-Large for RAG. Optimized deployment via Ray and quantization to achieve <200ms embedding latency.",
+      link: "https://github.com/Mihir-Khare429",
+      skills: ["Python", "Machine Learning", "Ray", "Whisper", "BERT", "Cloud"],
+    },
+    {
+      name: "Trailer 2 You (T2Y)",
+      description:
+        "Architected the backend for a trailer-booking application (Uber-style) using Node.js, Express, and MongoDB. Engineered the full booking workflow from React UI to backend, integrating Socket.io for live map updates and Google Maps API to lower booking abandonment by 8%.",
+      link: "https://trailer2you.com.au/about/",
+      skills: ["Node.js", "Express", "MongoDB", "React", "Socket.io"],
+    },
+    {
+      name: "Entertainment By Xpressions (EBX)",
+      description:
+        "Developed an automated music selection application based on real-time facial expression analysis. Built the entire UI and participated in the development of algorithms to map moods to playlists, streamlining user engagement through interactive ML features.",
+      link: "https://github.com/Mihir-Khare429/EBX-CapstoneProject-Frontend",
+      skills: ["Machine Learning", "Computer Vision", "React", "Emotion Recognition"],
     },
   ],
   education: [
