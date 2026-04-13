@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "MSCE Student at NYU",
   description:
     "Master's student in Computer Engineering at NYU Tandon focused on production-grade systems at the intersection of machine learning, software development, and cloud.",
-  accentColor: "#1d4ed8",
+  accentColor: "#38bdf8",
   social: {
     email: "mkhare429@gmail.com",
     linkedin: "https://www.linkedin.com/in/mihir-khare/",
@@ -43,7 +43,7 @@ export const siteConfig = {
       name: "Trailer 2 You (T2Y)",
       description:
         "Architected the backend for a trailer-booking application (Uber-style) using Node.js, Express, and MongoDB. Engineered the full booking workflow from React UI to backend, integrating Socket.io for live map updates and Google Maps API to lower booking abandonment by 8%.",
-      link: "#",
+      link: "https://trailer2you.com.au/about/",
       skills: ["Node.js", "Express", "MongoDB", "React", "Socket.io"],
     },
     {
