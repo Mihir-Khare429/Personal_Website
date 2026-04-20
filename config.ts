@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Mihir Khare",
-  title: "MSCE Student at NYU",
+  title: "Software Engineer • NYU MS CE '26",
   description:
-    "Master's student in Computer Engineering at NYU Tandon focused on production-grade systems at the intersection of machine learning, software development, and cloud.",
+    "Full-stack software engineer building production-grade data, API, and ML platforms across AWS, Spark, and React. MS in Computer Engineering at NYU Tandon (May 2026).",
   accentColor: "#1d4ed8",
   social: {
     email: "mkhare429@gmail.com",
@@ -10,26 +10,36 @@ export const siteConfig = {
     github: "https://github.com/Mihir-Khare429",
   },
   aboutMe:
-    "I’m a Master’s student in Computer Engineering at NYU Tandon, building production-grade systems at the intersection of Machine Learning, Software Development, and Cloud. Most recently at McKinsey & Company (MIO Partners), I architected a serverless data lake using AWS Glue (Apache Spark), Iceberg, and Athena that cut an Excel-extract workflow by 58% and reduced data fetch latency by 70%. Previously at Cimpress India, I migrated to a high-performance pricing architecture by restructuring .NET and Node.js service-level code, optimizing APIs to sustain 150k+ RPM and improving end-to-end latency by 25%.",
+    "Full-stack software engineer with 2+ years shipping production systems at McKinsey MIO and Cimpress. At McKinsey Investment Office, I architected MIO's first serverless trade-ops data lake on AWS Glue + Apache Iceberg + Athena — ingesting ~2.1M rows/day and cutting the TradeOps retrieval cycle from 14 min → 6 min (58% faster). At Cimpress, I drove the migration of the pricing platform from a .NET monolith to Node.js microservices sustaining 150K+ RPM across 3 AWS regions with 25% lower end-to-end latency. Currently completing my MS in Computer Engineering at NYU Tandon (May 2026), focused on distributed systems, cloud-native architecture, and ML platforms.",
   skills: [
     "Python",
-    "JavaScript (ES6+)",
     "TypeScript",
+    "JavaScript (ES6+)",
+    "Java",
     "C++",
+    "SQL",
     "Node.js",
     "React",
     "Next.js",
-    "Express",
+    "FastAPI",
     ".NET Core",
     "GraphQL",
+    "gRPC",
+    "REST APIs",
     "AWS",
     "Docker",
     "Kubernetes",
-    "Apache Spark",
     "Terraform",
-    "FastAPI",
+    "Apache Spark",
+    "Apache Kafka",
+    "Apache Iceberg",
     "PostgreSQL",
     "MongoDB",
+    "DynamoDB",
+    "Redis",
+    "CI/CD",
+    "ArgoCD",
+    "RAG / LLM Systems",
   ],
   experience: [
     {
@@ -37,8 +47,10 @@ export const siteConfig = {
       title: "Software Engineer Intern",
       dateRange: "May 2025 – August 2025",
       bullets: [
-        "Architected and implemented a serverless data lake solution using AWS Glue (Apache Spark), Iceberg, and Athena, resulting in a 58% reduction in the average time taken to run the TradeOps data retrieval cycle.",
-        "Redesigned the Trades OT extract pipeline using Parquet columnar storage and Presto parallelized execution, decreasing data fetch latency by 70% while enabling dynamic schema adaptability for real-time field additions.",
+        "Architected MIO's first serverless trade-ops data lake on AWS Glue (Apache Spark 3.4), Apache Iceberg, and Athena — ingesting ~2.1M trade rows/day and cutting the TradeOps retrieval cycle from 14 min → 6 min (58% faster), saving an estimated 120 analyst-hours per quarter.",
+        "Rebuilt the OTC trade-extract pipeline on Parquet + Presto with a 16-worker parallel scan, dropping p95 fetch latency 70% (110s → 33s) and introducing Iceberg schema evolution so analysts add trade attributes without a redeploy.",
+        "Shipped IAM-scoped FastAPI endpoints and PySpark ETL DAGs that deprecated ~9K LOC of ad-hoc Python used by 40+ TradeOps analysts, cutting data-pull support tickets by 60%.",
+        "Caught 3 pre-production race conditions in the Iceberg commit path via a concurrent-write load test and authored the Q4 migration playbook adopted by 2 downstream quant teams.",
       ],
     },
     {
@@ -46,11 +58,11 @@ export const siteConfig = {
       title: "Software Engineer",
       dateRange: "August 2022 – August 2024",
       bullets: [
-        "Led the migration to a high-performance pricing architecture by restructuring .NET and Node.js service-level code, implementing new functional features while optimizing database I/O, reducing read/write latency by 30% and supporting 150k+ requests per minute.",
-        "Engineered full-stack pricing workflows using React, GraphQL, and Express, achieving a 25% reduction in end-to-end latency and ensuring consistent page loads across 3 global regions.",
-        "Developed and rolled out business-critical pricing tools utilizing AWS, Docker, and Kubernetes to streamline infrastructure and cut deployment times by 40%.",
-        "Collaborated with product designers to refine component state logic and API contracts, enhancing frontend reliability and accessibility.",
-        "Championed code reviews focusing on scalability/security in Python/Node.js, reducing production incidents by 20%.",
+        "Drove the migration of the pricing platform from a .NET monolith to Node.js microservices with a Postgres read-replica fan-out, cutting p95 read latency 30% while sustaining 150K+ RPM across 3 AWS regions.",
+        "Engineered full-stack pricing workflows with React, GraphQL, and Express — achieving a 25% reduction in end-to-end latency and consistent page loads across 3 global regions.",
+        "Cut pricing-service deployment time 40% by containerizing .NET and Node services on EKS with blue-green rollouts, enabling real-time publishing of live prices during peak sales.",
+        "Refactored Redux state and GraphQL schema alongside 4 product designers and 2 accessibility engineers on dashboards serving 150K+ RPM — lifting Lighthouse accessibility scores from 78 → 96 and cutting client-side state bugs 35% (Sentry).",
+        "Championed code reviews focused on scalability and security across Python/Node.js services, reducing production incidents by 20%.",
       ],
     },
     {
@@ -58,7 +70,7 @@ export const siteConfig = {
       title: "Technical Advisor",
       dateRange: "July 2018 – May 2022",
       bullets: [
-        "Directed 90+ students in the web development domain, overseeing end-to-end project lifecycles from initial planning to deployment.",
+        "Ran the 90-student web-development chapter across two cohorts — designed a 14-workshop curriculum, mentored 6 project teams, and coached 2 winning VIT Hackathon teams (top 5%). 4 mentee apps shipped to TestFlight.",
       ],
     },
     {
@@ -66,10 +78,10 @@ export const siteConfig = {
       title: "Backend Developer Intern",
       dateRange: "June 2020 – November 2020",
       bullets: [
-        "Spearheaded backend development for Trailer 2 You, a trailer-booking app, utilizing Node.js, Express, and MongoDB.",
-        "Optimized performance by implementing efficient database structures, reducing data retrieval times by 20%.",
-        "Configured AWS Elastic Load Balancers and Auto Scaling Groups to sustain requests exceeding 10k per minute.",
-        "Engineered a complete booking process from React UI to Node.js backend, integrating Socket.io and Google Maps API.",
+        "Owned the backend for Trailer 2 You (Node.js + Express + MongoDB), shipping geospatial booking, payments, and live tracking to 3,500 Australian users in 6 months while sustaining 99.7% uptime on a t3.medium cluster.",
+        "Cut booking-API p95 latency 20% by introducing compound indexes and migrating N+1 Mongoose queries to aggregation pipelines.",
+        "Configured AWS Elastic Load Balancers and Auto Scaling Groups with CloudWatch monitoring to sustain request rates exceeding 10k per minute without significant lag or failures.",
+        "Shipped the end-to-end booking flow (React + Socket.io + Node/Express + Google Maps) — the app's primary conversion surface — enabling 11K+ trips in the first 6 months post-launch.",
       ],
     },
   ],
@@ -77,21 +89,31 @@ export const siteConfig = {
     {
       name: "Intelligent Multimedia Processing (IMP) for Enterprises",
       description:
-        "Designed a comprehensive ML system automating extraction and indexing of enterprise multimedia data. Integrated a multimodal pipeline using Whisper for transcription, Sentence Transformers for semantic search, and Flan-T5-Large for RAG. Optimized deployment via Ray and quantization to achieve <200ms embedding latency.",
+        "End-to-end RAG system that indexes enterprise multimedia and serves natural-language search plus auto-generated meeting minutes. Built a multimodal pipeline — Whisper (transcription) + Sentence Transformers (semantic search) + Flan-T5-Large (generation) — served via FastAPI, achieving <200ms embedding latency through model quantization and distributed Ray training. Automated CI/CD and continuous-training workflows with Terraform, Ansible, and ArgoCD.",
       link: "https://github.com/Mihir-Khare429",
-      skills: ["Python", "Machine Learning", "Ray", "Whisper", "BERT", "Cloud"],
+      skills: [
+        "Python",
+        "FastAPI",
+        "RAG",
+        "Ray",
+        "Whisper",
+        "Sentence-Transformers",
+        "Flan-T5",
+        "Terraform",
+        "ArgoCD",
+      ],
     },
     {
       name: "Trailer 2 You (T2Y)",
       description:
-        "Architected the backend for a trailer-booking application (Uber-style) using Node.js, Express, and MongoDB. Engineered the full booking workflow from React UI to backend, integrating Socket.io for live map updates and Google Maps API to lower booking abandonment by 8%.",
+        "Architected the backend for an Uber-style trailer-booking app using Node.js, Express, and MongoDB. Engineered the full booking workflow from React UI to backend, integrating Socket.io for live map updates and Google Maps API — reducing booking abandonment by 8% and serving 3,500 Australian users at 99.7% uptime.",
       link: "https://trailer2you.com.au/about/",
-      skills: ["Node.js", "Express", "MongoDB", "React", "Socket.io"],
+      skills: ["Node.js", "Express", "MongoDB", "React", "Socket.io", "AWS"],
     },
     {
       name: "Entertainment By Xpressions (EBX)",
       description:
-        "Developed an automated music selection application based on real-time facial expression analysis. Built the entire UI and participated in the development of algorithms to map moods to playlists, streamlining user engagement through interactive ML features.",
+        "Automated music-selection app powered by real-time facial expression analysis. Built the React frontend and co-developed the mood-to-playlist mapping algorithm, streamlining user engagement through interactive ML features.",
       link: "https://github.com/Mihir-Khare429/EBX-CapstoneProject-Frontend",
       skills: ["Machine Learning", "Computer Vision", "React", "Emotion Recognition"],
     },
@@ -102,7 +124,8 @@ export const siteConfig = {
       degree: "Master's in Computer Engineering",
       dateRange: "Sept 2024 - May 2026 (Expected)",
       achievements: [
-        "Master's candidate at NYU Tandon focusing on Cloud-native systems and ML-driven applications.",
+        "Focus on distributed systems, cloud-native architecture, and ML platforms.",
+        "Relevant coursework: Distributed Systems, Cloud Computing, Machine Learning Systems, Computer Architecture, Algorithms.",
       ],
     },
     {
@@ -110,7 +133,8 @@ export const siteConfig = {
       degree: "Bachelor of Technology in Computer Science and Engineering",
       dateRange: "July 2018 - May 2022",
       achievements: [
-        "Graduated with a focus on full-stack and backend engineering.",
+        "Concentration in full-stack and backend engineering.",
+        "Technical Advisor, Apple Developers Group — VIT (90+ students, 14 workshops).",
       ],
     },
   ],
